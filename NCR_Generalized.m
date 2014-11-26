@@ -10,7 +10,7 @@ clc;
 %% Parameter initialization and addition of paths
 addpath('Pairwise_Similarity');
 addpath('Results');
-addpath('Results/GeneralizedNCR');
+addpath('Results/GeneralizedNCR');abir 
 
 % Dataset name. This will be used to load pairwise wise similarity scores
 % and to store intermediate variable and results. For example the pairwise
@@ -26,7 +26,7 @@ cameras = [1 2 3 4];
 % Number of persons present in each camera. For ease of coding, in each
 % test (consisting of random test people IDs), the last 4 persons are
 % ommited from the last two cameras (in the example below)
-numPersons = [20, 20, 12, 12]; % Use [20, 20, 16, 16] for generating the data to plot Fig 6(a), whereas use [20, 20, 12, 12] for generating the data to plot Fig 6(b)
+numPersons = [20, 20, 16, 16]; % Use [20, 20, 16, 16] for generating the data to plot Fig 6(a), whereas use [20, 20, 12, 12] for generating the data to plot Fig 6(b)
 % kk is the different 'k' values to try
 kk = 0:0.05:0.4;
 
