@@ -10,7 +10,7 @@ clc;
 %% Parameter initialization and addition of paths
 addpath('Pairwise_Similarity');
 addpath('Results');
-addpath('Results/GeneralizedNCR');abir 
+addpath('Results/GeneralizedNCR');
 
 % Dataset name. This will be used to load pairwise wise similarity scores
 % and to store intermediate variable and results. For example the pairwise
@@ -119,7 +119,7 @@ for kCount = 1:length(kk)
         cp = CPairs(r,1);
         cq = CPairs(r,2);
         others = setdiff(cameras,[cp,cq]);
-        all_perms_tri = combntns(others, 1);
+        all_perms_tri = combnk(others, 1);
         for cr = all_perms_tri'
             triplets = [triplets; [cp,cr,cq]];
             vectorSize_pertriplet = [vectorSize_pertriplet; ...
